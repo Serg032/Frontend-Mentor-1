@@ -1,0 +1,151 @@
+body {
+  font-family: "Epilogue", sans-serif;
+  margin: 0;
+}
+body button:hover {
+  cursor: pointer;
+}
+body header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(0deg, 0%, 98%);
+}
+body header #logo {
+  margin-left: 20px;
+}
+body header #features {
+  display: none;
+}
+body header #login-container {
+  display: none;
+}
+body header #bars {
+  margin-right: 20px;
+}
+body main {
+  background-color: hsl(0deg, 0%, 98%);
+  width: 100%;
+}
+body main #background {
+  max-width: 100%;
+}
+body main #background-dk {
+  display: none;
+}
+body main #remote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main #remote br {
+  display: none;
+}
+body main #remote h1 {
+  font-weight: bold;
+  width: 370px;
+}
+body main #remote p {
+  text-align: center;
+  width: 350px;
+  font-size: 16px;
+  line-height: 25px;
+  color: hsl(0deg, 0%, 41%);
+  font-weight: 600;
+}
+body main #remote button {
+  border-radius: 8px;
+  background-color: hsl(0deg, 0%, 8%);
+  height: 50px;
+  color: hsl(0deg, 0%, 98%);
+  width: 140px;
+}
+body main #remote #low {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body main #remote #low #svg {
+  width: 80px;
+}
+
+@media screen and (min-width: 1000px) {
+  body header #first {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  body header #first #features {
+    display: flex;
+    gap: 30px;
+    font-weight: 600;
+    color: hsl(0deg, 0%, 41%);
+  }
+  body header #login-container {
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+  }
+  body header #login-container #log {
+    background-color: hsl(0deg, 0%, 98%);
+    border: none;
+    color: hsl(0deg, 0%, 41%);
+    font-weight: 600;
+    font-family: "Epilogue", sans-serif;
+  }
+  body header #login-container #register {
+    background-color: hsl(0deg, 0%, 98%);
+    border: 2px solid hsl(0deg, 0%, 41%);
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    color: hsl(0deg, 0%, 41%);
+    font-weight: 600;
+    font-family: "Epilogue", sans-serif;
+  }
+  body header #bars {
+    display: none;
+  }
+  body main {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+  }
+  body main #backgrounds #background {
+    display: none;
+  }
+  body main #backgrounds #background-dk {
+    display: block;
+    width: 500px;
+  }
+  body main #remote {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    height: 666px;
+  }
+  body main #remote br {
+    display: block;
+  }
+  body main #remote h1 {
+    font-size: 60px;
+    width: 400px;
+  }
+  body main #remote p {
+    text-align: left;
+    font-size: 18px;
+  }
+  body main #remote #low {
+    margin-top: 150px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
