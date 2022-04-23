@@ -71,6 +71,70 @@ body main #remote #low {
 body main #remote #low #svg {
   width: 80px;
 }
+body #collapse-mb {
+  transform: translateX(200%);
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+body #collapse-mb #almost-black {
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.322);
+}
+body #collapse-mb #features-co-mb {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: hsl(0deg, 0%, 98%);
+  width: 70%;
+  padding: 50px;
+}
+body #collapse-mb #features-co-mb #fea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 41%);
+}
+body #collapse-mb #features-co-mb #fea #up {
+  display: none;
+}
+body #collapse-mb #features-co-mb #fea #featu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+body #collapse-mb #features-co-mb #fea #featu-dis {
+  transition: all 0.4s ease;
+  display: none;
+  position: relative;
+  left: 30px;
+}
+body #collapse-mb #features-co-mb #compa {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body #collapse-mb #features-co-mb #compa #co {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+body #collapse-mb #features-co-mb #compa #up-comp {
+  display: none;
+}
+body #collapse-mb #features-co-mb #compa #comp-dis {
+  display: none;
+  position: relative;
+  top: -20px;
+  left: 30px;
+}
 
 @media screen and (min-width: 1000px) {
   body header #first {
