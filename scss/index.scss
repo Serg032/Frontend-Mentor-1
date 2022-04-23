@@ -4,7 +4,10 @@ $black: hsl(0, 0%, 8%);
 $white: hsl(0, 0%, 98%);
 $grey: hsl(0, 0%, 41%);
 
+
+
 body{
+    box-sizing: border-box;
     button:hover{
         cursor: pointer;
     }
@@ -54,6 +57,7 @@ body{
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
 
             h1{
                 font-weight: bold;
@@ -91,12 +95,13 @@ body{
     }
 
     #collapse-mb{
-        transform: translateX(200%);
+        // transform: translateX(200%);
         transition: all 0.6s ease;
         position: absolute;
         top: 0;
+        right: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         // background-color: $white;
         display: flex;
 
