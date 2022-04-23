@@ -4,11 +4,11 @@ window.addEventListener("load", () => {
   const cross = document.getElementById("cross");
 
   const showMenu = () => {
-    menu.style.transform = "translateX(0)";
+    menu.style.transform = "translate(0)";
   };
 
   const hideMenu = () => {
-    menu.style.transform = "translateX(200%)";
+    menu.style.transform = "translate(-100%)";
   };
 
   bars.addEventListener("click", showMenu);
