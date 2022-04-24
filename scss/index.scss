@@ -196,8 +196,9 @@ body{
 
                 #features{
                     display: flex;
-                    gap: 30px;
+                    gap: 70px;
                     font-weight: 600;
+                    align-items: center;
 
                     p{
                     color: $grey;
@@ -208,6 +209,62 @@ body{
                     p:hover{
                         color: $black;
                         transform: scale(1.1);
+                    }
+
+                    #features-dk{
+                        display: flex;
+                        #first-feature{
+                            display: flex;
+                            width: 130px;
+                            align-items: center;
+                            gap: 20px;
+                            #ff-up{
+                                display: none;
+                            }
+                        }
+                        
+                        #features-dk-display{
+                            display: none;
+                            position: absolute;
+                            top: 60px;
+                            left: 150px;
+                            background-color: $white;
+                            width: 130px;
+                            padding: 10px;
+                            border-radius: 7px;
+                            transition: all 0.4s ease-in-out;
+                            box-shadow: 2px 2px 5px 2px $black;                      
+                        }
+                    }
+
+                    #company-box{
+                        display: flex;
+                        flex-direction: column;
+                        
+                        #comp-opener{
+                            display: flex;
+                            gap: 20px;
+                            align-items: center;
+
+                            #cc-up{
+                                display: none;
+                            }
+
+                        }
+
+                        #comp-display{
+                            display: none;
+                            text-align: center;
+                            position: absolute;
+                            top: 60px;
+                            left: 350px;
+                            background-color: $white;
+                            width: 130px;
+                            padding: 10px;
+                            border-radius: 7px;
+                            transition: all 0.4s ease-in-out;
+                            box-shadow: 2px 2px 5px 2px $black;   
+                        }
                     }
                 }
 
@@ -304,11 +361,17 @@ body{
                     font-size: 18px;
                 }
 
-                // button{
-                //     // margin-top: 50px;
-                //     // height: 60px;
-                    
-                // }
+                button{
+                    height: 60px;
+                    width: 170px;
+                }
+
+                button:hover{
+                    background-color: $white;
+                    border: 2px solid $black;
+                    color: $black;
+                    font-weight: 600;
+                }
 
                 #low{
                     margin-top: 150px;
@@ -316,136 +379,5 @@ body{
             }
         }
     }
-    // body{
-    //    background-color: $white;
-    //     header{
-    //         height: 80px;
-    //         margin-bottom: 30px;
 
-    //         #first{
-    //             display: flex;
-    //             align-items: center;
-    //             gap: 60px;
-
-    //             #logo{
-    //                 margin-left: $margin-left-mb;
-    //                 // width: 130px;
-    //                 // height: 50px;
-    //             }
-        
-    //             #features{
-    //                 display: flex;
-    //                 align-items: center;
-    //                 gap: 40px;
-    //                 // margin-left: -1700px;
-    //                 color:  $grey;
-    //                 font-weight: 600;
-    //                 font-size: 22px;
-    //             }
-
-    //         }
-           
-    //         #login-container{
-    //             display: flex;
-    //             align-items: center;
-    //             gap: 25px;
-    //             margin-right: $margin-rigth-mb;
-
-    //             #log{
-    //                 border: none;
-    //                 color: $grey;
-    //                 background-color: $white;
-    //                 font-size: 22px;
-    //                 height: 50px;
-    //                 width: 100px;
-    //                 height: 100px;
-    //                 font-weight: 600;
-
-    //             }
-
-    //             #register{
-    //                 border: 2px solid $grey ;
-    //                 border-radius: 12px;
-    //                 color: $grey;
-    //                 background-color: $white;
-    //                 font-size: 22px;
-    //                 height: 50px;
-    //                 width: 120px;
-    //                 font-weight: bolder;
-
-    //             }
-    //         }
-    
-    //         #bars{
-    //             display: none;
-    //         }
-    //     }
-    
-    //     main{
-    //         // background-color: aqua;
-    //         display: flex;
-    //         flex-direction: row-reverse; 
-    //         align-items: baseline;
-    //         gap: 10px;
-    //         justify-content: center;
-
-    //         #backgrounds{
-
-    //             #background{
-    //                 max-width: 100%;
-    //                 display: none;
-    //             } 
-            
-    //             #background-dk{
-    //                 display: block; 
-    //                 // height: 100vh;
-    //             }
-
-    //         }
-           
-            
-    
-    //         #remote{
-    //             width: 50%;
-    //             display: flex;
-    //             flex-direction: column;
-    //             gap: 50px;
-    //             align-items: flex-start ;
-    //             height: 80%;
-    
-    //             h1{
-    //                 font-weight: bold;
-    //                 font-size: 100px;
-    //                 width: 50%;
-    //             }
-    
-    //             p{
-    //                 text-align:left ;
-    //                 width: 50%;
-    //                 font-size: 30px;
-    //                 line-height: 40px;
-    //                 color: hsl(0, 0%, 41%);
-    //             }
-    
-    //             button{
-    //                 background-color: hsl(0, 0%, 8%);
-    //                 height: 80px;
-    //                 color: hsl(0, 0%, 98%);
-    //                 width: 170px;
-    //                 font-size: 22px;
-    //             }
-    
-    //             #low{
-    //                 display: flex;
-    //                 align-items: center;
-    //                 gap: 50px;
-    //                 width: 50%;
-    
-    //                 #svg{
-    //                     width: 120px;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
     }

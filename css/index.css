@@ -153,8 +153,9 @@ body #collapse-mb #features-co-mb #compa #comp-dis {
   }
   body header #first #features {
     display: flex;
-    gap: 30px;
+    gap: 70px;
     font-weight: 600;
+    align-items: center;
   }
   body header #first #features p {
     color: hsl(0deg, 0%, 41%);
@@ -164,6 +165,55 @@ body #collapse-mb #features-co-mb #compa #comp-dis {
   body header #first #features p:hover {
     color: hsl(0deg, 0%, 8%);
     transform: scale(1.1);
+  }
+  body header #first #features #features-dk {
+    display: flex;
+  }
+  body header #first #features #features-dk #first-feature {
+    display: flex;
+    width: 130px;
+    align-items: center;
+    gap: 20px;
+  }
+  body header #first #features #features-dk #first-feature #ff-up {
+    display: none;
+  }
+  body header #first #features #features-dk #features-dk-display {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    background-color: hsl(0deg, 0%, 98%);
+    width: 130px;
+    padding: 10px;
+    border-radius: 7px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 2px 2px 5px 2px hsl(0deg, 0%, 8%);
+  }
+  body header #first #features #company-box {
+    display: flex;
+    flex-direction: column;
+  }
+  body header #first #features #company-box #comp-opener {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  body header #first #features #company-box #comp-opener #cc-up {
+    display: none;
+  }
+  body header #first #features #company-box #comp-display {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 350px;
+    background-color: hsl(0deg, 0%, 98%);
+    width: 130px;
+    padding: 10px;
+    border-radius: 7px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 2px 2px 5px 2px hsl(0deg, 0%, 8%);
   }
   body header #login-container {
     display: flex;
@@ -236,6 +286,16 @@ body #collapse-mb #features-co-mb #compa #comp-dis {
   body main #remote p {
     text-align: left;
     font-size: 18px;
+  }
+  body main #remote button {
+    height: 60px;
+    width: 170px;
+  }
+  body main #remote button:hover {
+    background-color: hsl(0deg, 0%, 98%);
+    border: 2px solid hsl(0deg, 0%, 8%);
+    color: hsl(0deg, 0%, 8%);
+    font-weight: 600;
   }
   body main #remote #low {
     margin-top: 150px;
