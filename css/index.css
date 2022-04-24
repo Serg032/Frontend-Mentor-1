@@ -28,6 +28,10 @@ body header #bars {
 }
 body main {
   background-color: hsl(0deg, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 body main #background {
@@ -48,6 +52,8 @@ body main #remote br {
 body main #remote h1 {
   font-weight: bold;
   width: 370px;
+  text-align: center;
+  font-size: 36px;
 }
 body main #remote p {
   text-align: center;
